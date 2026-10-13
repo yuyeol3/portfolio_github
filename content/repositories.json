@@ -1,0 +1,890 @@
+{
+  "username": "yuyeol3",
+  "generatedAt": "2026-10-13T17:43:10.044Z",
+  "repositories": [
+    {
+      "name": "portfolio_github",
+      "full_name": "yuyeol3/portfolio_github",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "A curated archive of public repositories and participating projects, powered by GitHub API and GitHub Pages",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-10-13T17:25:47Z"
+    },
+    {
+      "name": "bojsrc",
+      "full_name": "yuyeol3/bojsrc",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).",
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-10-13T14:40:57Z"
+    },
+    {
+      "name": "hyundai-autoever-portfolio",
+      "full_name": "yuyeol3/hyundai-autoever-portfolio",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "현대오토에버 수출물류·DCM Backend Developer 지원 포트폴리오",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-10-11T15:00:58Z"
+    },
+    {
+      "name": "mc-distributed",
+      "full_name": "yuyeol3/mc-distributed",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "서버 없이 친구들과 하나의 마인크래프트 월드를 플레이할 수 있습니다. ",
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-10-11T14:20:16Z"
+    },
+    {
+      "name": "hop",
+      "full_name": "yuyeol3/hop",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Rust",
+      "stargazers_count": 0,
+      "fork": true,
+      "archived": false,
+      "updated_at": "2026-10-08T05:53:20Z"
+    },
+    {
+      "name": "pr-bot-sandbox",
+      "full_name": "yuyeol3/pr-bot-sandbox",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "카카오테크 캠퍼스 4기 2단계 팀 프로젝트 — 부산대 4팀",
+      "language": "Python",
+      "stargazers_count": 0,
+      "fork": true,
+      "archived": false,
+      "updated_at": "2026-10-05T03:02:36Z"
+    },
+    {
+      "name": "ktc4-pusan-4-progress",
+      "full_name": "yuyeol3/ktc4-pusan-4-progress",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "카카오테크 캠퍼스 4기 부산대 4팀 9월 진행상황·10월 계획 슬라이드",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-10-03T18:26:04Z"
+    },
+    {
+      "name": "plato-calendar3",
+      "full_name": "yuyeol3/plato-calendar3",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "플라토 캘린더입니다.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-09-30T13:31:01Z"
+    },
+    {
+      "name": "software-engineer-portfolio",
+      "full_name": "yuyeol3/software-engineer-portfolio",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "CJ올리브네트웍스 Software Engineer 지원 포트폴리오",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-09-30T07:19:01Z"
+    },
+    {
+      "name": "merchant-category-classifier",
+      "full_name": "yuyeol3/merchant-category-classifier",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "카드 상호명 -> 업종/지출 카테고리 분류 실험 (소상공인 상가데이터 + char n-gram 분류기, ktc4-pusan-4 32-cat 매핑)",
+      "language": "Python",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-09-16T05:23:27Z"
+    },
+    {
+      "name": "claude-humanize-skill",
+      "full_name": "yuyeol3/claude-humanize-skill",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "한국어 글을 사람이 읽기 자연스럽게 다듬는 Claude Code 스킬",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-09-12T05:30:08Z"
+    },
+    {
+      "name": "yuyeol3.github.io",
+      "full_name": "yuyeol3/yuyeol3.github.io",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-09-06T04:08:48Z"
+    },
+    {
+      "name": "Fin-FE-test",
+      "full_name": "yuyeol3/Fin-FE-test",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-09-03T16:40:21Z"
+    },
+    {
+      "name": "Fin-BE-test",
+      "full_name": "yuyeol3/Fin-BE-test",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": true,
+      "archived": false,
+      "updated_at": "2026-08-27T12:49:27Z"
+    },
+    {
+      "name": "tax-agent-prototype",
+      "full_name": "yuyeol3/tax-agent-prototype",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "IT 프리랜서를 위한 AI 필요경비 판정 프론트엔드 프로토타입",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-08-22T01:03:03Z"
+    },
+    {
+      "name": "maintain-code-map",
+      "full_name": "yuyeol3/maintain-code-map",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "Codex skill for thin, source-linked repository code maps",
+      "language": "Python",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-08-18T15:37:21Z"
+    },
+    {
+      "name": "codex-subagent",
+      "full_name": "yuyeol3/codex-subagent",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "Codex skill for efficient Sol, Terra, and Luna subagent orchestration",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-08-09T03:24:36Z"
+    },
+    {
+      "name": "tdd-skill",
+      "full_name": "yuyeol3/tdd-skill",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "테스트 작성과 TDD를 위한 Claude Code 스킬 — Red를 실제로 실행해 확인하도록 강제한다",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-08-03T04:48:17Z"
+    },
+    {
+      "name": "explain-diff",
+      "full_name": "yuyeol3/explain-diff",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "코드 변경을 의도 중심으로 설명해주는 Claude Code 스킬 — 근거 추적, 배경 설명, 눈여겨 볼 부분(버그·보안) 스캔",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-07-29T16:05:51Z"
+    },
+    {
+      "name": "sw-problem-solving-presentation",
+      "full_name": "yuyeol3/sw-problem-solving-presentation",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-07-20T07:51:51Z"
+    },
+    {
+      "name": "vibe-coding-practice-",
+      "full_name": "yuyeol3/vibe-coding-practice-",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-06-24T07:49:17Z"
+    },
+    {
+      "name": "fullstack-practice",
+      "full_name": "yuyeol3/fullstack-practice",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-06-12T11:24:18Z"
+    },
+    {
+      "name": "yacht-online",
+      "full_name": "yuyeol3/yacht-online",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-06-07T07:26:01Z"
+    },
+    {
+      "name": "git-collab-demo",
+      "full_name": "yuyeol3/git-collab-demo",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-06-05T02:33:26Z"
+    },
+    {
+      "name": "yacht-backend",
+      "full_name": "yuyeol3/yacht-backend",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "yacht 게임을 함께 할 수 있도록 구현한 백엔드 어플리케이션",
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-06-01T10:47:01Z"
+    },
+    {
+      "name": "kakao-assignment-1",
+      "full_name": "yuyeol3/kakao-assignment-1",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-05-29T12:50:01Z"
+    },
+    {
+      "name": "kakaotech-learning-log",
+      "full_name": "yuyeol3/kakaotech-learning-log",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-05-23T04:46:50Z"
+    },
+    {
+      "name": "cc-hw5",
+      "full_name": "yuyeol3/cc-hw5",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Shell",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-05-22T17:15:16Z"
+    },
+    {
+      "name": "yacht-frontend",
+      "full_name": "yuyeol3/yacht-frontend",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-05-21T16:43:06Z"
+    },
+    {
+      "name": "test",
+      "full_name": "yuyeol3/test",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "Test repo for Introduction to Unix",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-05-11T05:18:05Z"
+    },
+    {
+      "name": "timetable-generator",
+      "full_name": "yuyeol3/timetable-generator",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "generates time table image",
+      "language": "Python",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-04-14T17:42:43Z"
+    },
+    {
+      "name": "youtube-shortener-frontend",
+      "full_name": "yuyeol3/youtube-shortener-frontend",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-03-07T14:29:38Z"
+    },
+    {
+      "name": "youtube-shortener-backend",
+      "full_name": "yuyeol3/youtube-shortener-backend",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "유튜브 동영상의 인기 구간(핫스팟)을 골라서 시청할 수 있는 웹 애플리케이션",
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-03-07T14:22:26Z"
+    },
+    {
+      "name": "login-demo",
+      "full_name": "yuyeol3/login-demo",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-03-02T12:01:28Z"
+    },
+    {
+      "name": "youtube-shortener-legacy",
+      "full_name": "yuyeol3/youtube-shortener-legacy",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "유튜브 동영상의 인기 구간(핫스팟)을 골라서 시청할 수 있는 웹 애플리케이션(레거시)",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-02-03T11:47:50Z"
+    },
+    {
+      "name": "Spring-Explore",
+      "full_name": "yuyeol3/Spring-Explore",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-01-17T15:42:42Z"
+    },
+    {
+      "name": "backend-study-sns",
+      "full_name": "yuyeol3/backend-study-sns",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": true,
+      "archived": false,
+      "updated_at": "2025-12-03T12:50:16Z"
+    },
+    {
+      "name": "ai_data",
+      "full_name": "yuyeol3/ai_data",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-11-29T17:21:36Z"
+    },
+    {
+      "name": "yacht-dist",
+      "full_name": "yuyeol3/yacht-dist",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "A repo for yacht distribution",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-10-26T04:17:38Z"
+    },
+    {
+      "name": "yacht",
+      "full_name": "yuyeol3/yacht",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "simple yacht game",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-10-26T04:06:14Z"
+    },
+    {
+      "name": "codeTree",
+      "full_name": "yuyeol3/codeTree",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "C++",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-08-15T15:28:33Z"
+    },
+    {
+      "name": "random-busan-restaurants",
+      "full_name": "yuyeol3/random-busan-restaurants",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-06-25T10:03:36Z"
+    },
+    {
+      "name": "iwb-term-chat",
+      "full_name": "yuyeol3/iwb-term-chat",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "인웹기 텀프 채팅 기능 구현을 위한 레포",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-06-21T02:02:34Z"
+    },
+    {
+      "name": "algorithm_study",
+      "full_name": "yuyeol3/algorithm_study",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "https://github.com/encrypted-def/basic-algo-lecture",
+      "language": "C++",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-02-06T11:06:20Z"
+    },
+    {
+      "name": "wigitback",
+      "full_name": "yuyeol3/wigitback",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "a simple git based wiki",
+      "language": "Python",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-01-12T13:03:10Z"
+    },
+    {
+      "name": "smart-trashbin",
+      "full_name": "yuyeol3/smart-trashbin",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "smart trashbin using arduino",
+      "language": "C++",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-01-05T11:33:42Z"
+    },
+    {
+      "name": "smart-trashbin-server",
+      "full_name": "yuyeol3/smart-trashbin-server",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-01-05T11:28:36Z"
+    },
+    {
+      "name": "CoordinatesPlugin",
+      "full_name": "yuyeol3/CoordinatesPlugin",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2024-12-30T01:59:26Z"
+    },
+    {
+      "name": "wigitfront",
+      "full_name": "yuyeol3/wigitfront",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2024-09-20T07:28:59Z"
+    },
+    {
+      "name": "web-youtube-transcript",
+      "full_name": "yuyeol3/web-youtube-transcript",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2024-07-26T06:45:34Z"
+    },
+    {
+      "name": "hanja-hangul",
+      "full_name": "yuyeol3/hanja-hangul",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2024-07-15T13:09:44Z"
+    },
+    {
+      "name": "helloWorld",
+      "full_name": "yuyeol3/helloWorld",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "C++",
+      "stargazers_count": 0,
+      "fork": true,
+      "archived": false,
+      "updated_at": "2024-07-15T13:01:26Z"
+    },
+    {
+      "name": "forkPractice",
+      "full_name": "yuyeol3/forkPractice",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "fork": true,
+      "archived": false,
+      "updated_at": "2024-07-15T12:39:19Z"
+    },
+    {
+      "name": "2020OSS",
+      "full_name": "yuyeol3/2020OSS",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "C",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2024-07-14T12:12:17Z"
+    },
+    {
+      "name": "death_chest",
+      "full_name": "yuyeol3/death_chest",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": "handle player deaths in a Minecraft Bedrock environment",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2024-05-14T09:03:33Z"
+    },
+    {
+      "name": "minecraftbe_world1",
+      "full_name": "yuyeol3/minecraftbe_world1",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2024-03-18T03:41:06Z"
+    },
+    {
+      "name": "vanilaJsRouting",
+      "full_name": "yuyeol3/vanilaJsRouting",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2023-10-26T13:49:33Z"
+    },
+    {
+      "name": "STL_study",
+      "full_name": "yuyeol3/STL_study",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2023-09-16T13:46:36Z"
+    },
+    {
+      "name": "gitController",
+      "full_name": "yuyeol3/gitController",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2023-03-15T12:24:21Z"
+    },
+    {
+      "name": "git-practice",
+      "full_name": "yuyeol3/git-practice",
+      "owner": {
+        "login": "yuyeol3"
+      },
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2022-04-23T01:20:01Z"
+    },
+    {
+      "name": "Fin-BE",
+      "full_name": "ApptiveDev/Fin-BE",
+      "owner": {
+        "login": "ApptiveDev"
+      },
+      "description": "Fin. 청년들의 금융(Finance) 고민을 끝(Finish)내다.",
+      "language": "Java",
+      "stargazers_count": 2,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-10-06T14:00:22Z"
+    },
+    {
+      "name": "Fin-API",
+      "full_name": "ApptiveDev/Fin-API",
+      "owner": {
+        "login": "ApptiveDev"
+      },
+      "description": "Fin. 청년들의 금융(Finance) 고민을 끝(Finish)내다.",
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-10-06T13:46:54Z"
+    },
+    {
+      "name": "ktc4-pusan-4",
+      "full_name": "kakaotechcampus-4/ktc4-pusan-4",
+      "owner": {
+        "login": "kakaotechcampus-4"
+      },
+      "description": "카카오테크 캠퍼스 4기 2단계 팀 프로젝트 — 부산대 4팀",
+      "language": "Java",
+      "stargazers_count": 1,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-10-12T07:21:13Z"
+    },
+    {
+      "name": "backend-study-sns",
+      "full_name": "ApptiveDev/backend-study-sns",
+      "owner": {
+        "login": "ApptiveDev"
+      },
+      "description": null,
+      "language": "Java",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2025-10-04T06:08:38Z"
+    },
+    {
+      "name": "pusan-clone",
+      "full_name": "kakaotechcampus-4/pusan-clone",
+      "owner": {
+        "login": "kakaotechcampus-4"
+      },
+      "description": "1단계 클론코딩 Repository - 부산대",
+      "language": "Python",
+      "stargazers_count": 3,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-08-12T05:18:28Z"
+    },
+    {
+      "name": "pnuai-c-07-finfin2",
+      "full_name": "PNU-2026-AI-Hackathon/pnuai-c-07-finfin2",
+      "owner": {
+        "login": "PNU-2026-AI-Hackathon"
+      },
+      "description": "Y-Fin. 청년(Youth)들의 금융(Finance) 고민을 끝(Finish)내다.",
+      "language": "Java",
+      "stargazers_count": 4,
+      "fork": true,
+      "archived": false,
+      "updated_at": "2026-09-20T04:25:26Z"
+    },
+    {
+      "name": "StarterTemplate",
+      "full_name": "PNU-2026-AI-Hackathon/StarterTemplate",
+      "owner": {
+        "login": "PNU-2026-AI-Hackathon"
+      },
+      "description": "pnu-2026-ai-hackathon-pnuai-StarterTemplate created by GitHub Classroom",
+      "language": null,
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-05-20T08:45:35Z"
+    },
+    {
+      "name": "capstone-2026-team-30",
+      "full_name": "pnucse-capstone2026/capstone-2026-team-30",
+      "owner": {
+        "login": "pnucse-capstone2026"
+      },
+      "description": "쿠버네티스 환경에서의 PaC 위반 대응 및 예외 관리 시스템 설계",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-09-30T13:34:40Z"
+    }
+  ]
+}

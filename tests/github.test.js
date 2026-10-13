@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { fetchPublicRepositories, fetchExternalRepositories } from '../src/github.js';
+import { fetchPublicRepositories, fetchExternalRepositories } from '../scripts/github.mjs';
 
 test('loads every page so users with more than 100 repositories are not truncated', async () => {
   const urls = [];

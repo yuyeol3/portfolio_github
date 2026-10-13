@@ -4,8 +4,8 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    # Daily at 09:23 Korea time (00:23 UTC).
-    - cron: '23 0 * * *'
+    # Hourly at minute 23; manual dispatch also refreshes the data.
+    - cron: '23 * * * *'
 permissions:
   contents: read
   pages: write
@@ -24,8 +24,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Discover public participating repositories
-        run: npm run discover
+      - name: Sync public repositories and contributions
+        run: npm run sync
         env:
           GH_TOKEN: ${{ github.token }}
       - run: npm test

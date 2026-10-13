@@ -2,5 +2,5 @@
   "name": "github-repository-portfolio",
   "private": true,
   "type": "module",
-  "scripts": { "test": "node --test", "start": "node scripts/serve.mjs", "build": "node scripts/build.mjs", "discover": "node scripts/discover-contributions.mjs" }
+  "scripts": { "test": "node --test", "start": "node scripts/serve.mjs", "build": "node scripts/build.mjs", "sync": "node scripts/sync-repositories.mjs" }
 }

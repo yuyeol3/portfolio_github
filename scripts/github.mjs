@@ -1,4 +1,4 @@
-export async function fetchPublicRepositories(username, fetcher = fetch) {
+export async function fetchPublicRepositories(username, fetcher) {
   const repositories = [];
   for (let page = 1; ; page++) {
     const url = `https://api.github.com/users/${encodeURIComponent(username)}/repos?type=owner&sort=updated&per_page=100&page=${page}`;
@@ -11,7 +11,7 @@ export async function fetchPublicRepositories(username, fetcher = fetch) {
   }
 }
 
-export async function fetchExternalRepositories(names, fetcher = fetch) {
+export async function fetchExternalRepositories(names, fetcher) {
   const results = await Promise.allSettled([...new Set(names)].map(async name => {
     if (!/^[\w.-]+\/[\w.-]+$/.test(name)) throw new Error(`${name}: owner/repo 형식이 필요합니다.`);
     const response = await fetcher(`https://api.github.com/repos/${name}`, {

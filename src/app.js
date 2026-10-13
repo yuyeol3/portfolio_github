@@ -1,12 +1,11 @@
-import { fetchPublicRepositories, fetchExternalRepositories } from './github.js';
-import { curateRepositories, resolveExternalRepositories, repositoryUrl } from './repositories.js';
+import { fetchRepositorySnapshot, validateSnapshot } from './snapshot.js';
+import { curateRepositories, repositoryUrl } from './repositories.js';
 
 const $ = selector => document.querySelector(selector);
 let config;
 let repositories = [];
 let category = 'all';
 let scope = 'all';
-let discoveryWarning = '';
 const formatter = new Intl.DateTimeFormat('ko-KR', { year: 'numeric', month: 'short', day: 'numeric' });
 const element = (tag, className, text) => {
   const node = document.createElement(tag);
@@ -16,7 +15,10 @@ const element = (tag, className, text) => {
 };
 const categories = () => [...config.categories, { id: 'uncategorized', label: '미분류' }];
 const isOwned = repo => repo.owner.login.toLowerCase() === config.username.toLowerCase();
-const cacheKey = () => `repository-archive:${config.username}:${JSON.stringify(config.externalRepositories)}`;
+const cacheKey = () => `repository-archive:snapshot:${config.username}`;
+const snapshotFormatter = new Intl.DateTimeFormat('ko-KR', {
+  month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Seoul', hour12: false,
+});
 
 function renderCategories() {
   const items = [{ id: 'all', label: '모든 프로젝트' }, ...categories()];
@@ -88,33 +90,26 @@ function renderRepositories() {
   $('#summary').textContent = `공개 저장소 ${repositories.length}개 · 개인 ${repositories.filter(isOwned).length} · 참여 ${repositories.filter(repo => !isOwned(repo)).length}`;
 }
 
-function applyData(data) {
-  repositories = curateRepositories(data, config);
+function applySnapshot(snapshot) {
+  repositories = curateRepositories(snapshot.repositories, config);
   renderCategories();
   renderRepositories();
+  $('#sync-label').textContent = `갱신 ${snapshotFormatter.format(new Date(snapshot.generatedAt))}`;
+  $('#sync-label').title = `${snapshot.generatedAt} · 데이터는 매시간 자동 갱신됩니다.`;
 }
 
 async function refresh() {
   $('#refresh').disabled = true;
   $('#repository-list').setAttribute('aria-busy', 'true');
-  $('#status').textContent = 'GitHub에서 최신 프로젝트를 불러오는 중입니다…';
+  $('#status').textContent = '프로젝트 목록을 불러오는 중입니다…';
   try {
-    const [owned, external] = await Promise.all([
-      fetchPublicRepositories(config.username),
-      fetchExternalRepositories(config.externalRepositories ?? []),
-    ]);
-    const data = [...new Map([...owned, ...external.repositories].map(repo => [repo.full_name, repo])).values()];
-    applyData(data);
-    const fetchedAt = new Date().toISOString();
-    // A partial external response must not replace a previously complete cache.
-    if (!external.errors.length && !discoveryWarning) {
-      try { localStorage.setItem(cacheKey(), JSON.stringify({ data, fetchedAt })); } catch { /* Storage may be disabled. */ }
-    }
-    $('#sync-label').textContent = `조회 ${new Date(fetchedAt).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })}`;
-    $('#status').textContent = [discoveryWarning, ...external.errors].filter(Boolean).join(' ');
+    const snapshot = await fetchRepositorySnapshot(new URL('../content/repositories.json', import.meta.url), config.username);
+    applySnapshot(snapshot);
+    try { localStorage.setItem(cacheKey(), JSON.stringify(snapshot)); } catch { /* Storage may be disabled. */ }
+    $('#status').textContent = '';
   } catch (error) {
     $('#status').textContent = `${error.message} ${repositories.length ? '마지막으로 불러온 목록을 표시합니다.' : '새로고침으로 다시 시도해 주세요.'}`;
-    $('#sync-label').textContent = repositories.length ? '이전 조회 결과' : '연결 실패';
+    if (!repositories.length) $('#sync-label').textContent = '연결 실패';
   } finally {
     $('#refresh').disabled = false;
     $('#repository-list').setAttribute('aria-busy', 'false');
@@ -127,14 +122,6 @@ async function initialize() {
     if (!response.ok) throw new Error('사이트 설정을 불러오지 못했습니다.');
     config = await response.json();
     if (!config.username || !Array.isArray(config.categories)) throw new Error('사이트 설정의 username과 categories를 확인해 주세요.');
-    try {
-      const discovery = await fetch(new URL('../content/contributions.json', import.meta.url), { cache: 'no-cache' });
-      if (!discovery.ok) throw new Error('참여 목록 조회 실패');
-      config.externalRepositories = resolveExternalRepositories(config, await discovery.json());
-    } catch {
-      discoveryWarning = '자동 참여 목록을 불러오지 못해 수동 등록 목록을 표시합니다.';
-      config.externalRepositories = resolveExternalRepositories(config);
-    }
     document.title = `${config.username} — Repository archive`;
     $('#site-title').textContent = config.title;
     $('#site-description').textContent = config.description;
@@ -142,7 +129,7 @@ async function initialize() {
     $('#profile-link').href = `https://github.com/${encodeURIComponent(config.username)}`;
     try {
       const cached = JSON.parse(localStorage.getItem(cacheKey()));
-      if (cached && Array.isArray(cached.data)) applyData(cached.data);
+      if (cached) applySnapshot(validateSnapshot(cached, config.username));
     } catch { /* Ignore missing or invalid browser cache. */ }
     renderCategories();
     $('#search').addEventListener('input', renderRepositories);
