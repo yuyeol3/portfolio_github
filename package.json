@@ -1,0 +1,6 @@
+{
+  "name": "github-repository-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test", "start": "node scripts/serve.mjs", "build": "node scripts/build.mjs" }
+}

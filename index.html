@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="yuyeol3의 프로젝트와 공개 GitHub 저장소 모음">
+  <title>yuyeol3 — Repository archive</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#repository-list">프로젝트 목록으로 건너뛰기</a>
+  <header class="topbar wrap"><a class="brand" href="./">yuyeol3 <span class="brand-sub">/ projects</span></a><a id="profile-link" href="https://github.com/yuyeol3" target="_blank" rel="noopener noreferrer">GitHub ↗</a></header>
+  <main class="wrap">
+    <section class="intro">
+      <h1 id="site-title">프로젝트 모음</h1>
+      <p id="site-description" class="intro-description">직접 만든 프로젝트와 함께 참여한 프로젝트를 정리했습니다.</p>
+      <div class="intro-bottom"><p id="summary">공개 저장소를 불러오는 중입니다.</p><div class="sync"><span id="sync-label">GitHub와 연결 중</span><button id="refresh" type="button">새로고침 ↻</button></div></div>
+    </section>
+    <div class="collection-layout">
+      <aside><p class="section-label">카테고리</p><nav id="categories" aria-label="프로젝트 카테고리"></nav></aside>
+      <section class="collection" aria-label="저장소 탐색">
+        <div class="toolbar"><label class="search"><input id="search" type="search" placeholder="프로젝트, 설명, 기술 검색" aria-label="프로젝트 검색"></label><select id="sort" aria-label="정렬"><option value="featured">추천순</option><option value="updated">최근 업데이트순</option><option value="stars">스타 많은 순</option><option value="name">이름순</option></select></div>
+        <div class="filters"><div class="scope" role="group" aria-label="프로젝트 소유자"><button type="button" data-scope="all" aria-pressed="true">전체</button><button type="button" data-scope="owned" aria-pressed="false">개인 프로젝트</button><button type="button" data-scope="contributed" aria-pressed="false">참여 프로젝트</button></div><label class="fork-filter"><input id="show-forks" type="checkbox" checked> Fork 포함</label></div>
+        <div class="list-heading"><h2 id="collection-title">모든 프로젝트</h2><span id="result-count"></span></div>
+        <p id="status" class="status" role="status" aria-live="polite">프로젝트를 불러오는 중입니다…</p>
+        <div id="repository-list" class="repository-grid" aria-busy="true" tabindex="-1"></div>
+        <p id="empty" class="empty" hidden>조건에 맞는 프로젝트가 없습니다. 검색어나 필터를 변경해 보세요.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="wrap"><span>yuyeol3</span></footer>
+</body>
+</html>
