@@ -1,11 +1,12 @@
 import { fetchPublicRepositories, fetchExternalRepositories } from './github.js';
-import { curateRepositories } from './repositories.js';
+import { curateRepositories, resolveExternalRepositories } from './repositories.js';
 
 const $ = selector => document.querySelector(selector);
 let config;
 let repositories = [];
 let category = 'all';
 let scope = 'all';
+let discoveryWarning = '';
 const formatter = new Intl.DateTimeFormat('ko-KR', { year: 'numeric', month: 'short', day: 'numeric' });
 const element = (tag, className, text) => {
   const node = document.createElement(tag);
@@ -106,11 +107,11 @@ async function refresh() {
     applyData(data);
     const fetchedAt = new Date().toISOString();
     // A partial external response must not replace a previously complete cache.
-    if (!external.errors.length) {
+    if (!external.errors.length && !discoveryWarning) {
       try { localStorage.setItem(cacheKey(), JSON.stringify({ data, fetchedAt })); } catch { /* Storage may be disabled. */ }
     }
     $('#sync-label').textContent = `조회 ${new Date(fetchedAt).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })}`;
-    $('#status').textContent = external.errors.length ? `일부 참여 프로젝트를 불러오지 못했습니다. ${external.errors.join(' ')}` : '';
+    $('#status').textContent = [discoveryWarning, ...external.errors].filter(Boolean).join(' ');
   } catch (error) {
     $('#status').textContent = `${error.message} ${repositories.length ? '마지막으로 불러온 목록을 표시합니다.' : '새로고침으로 다시 시도해 주세요.'}`;
     $('#sync-label').textContent = repositories.length ? '이전 조회 결과' : '연결 실패';
@@ -126,6 +127,14 @@ async function initialize() {
     if (!response.ok) throw new Error('사이트 설정을 불러오지 못했습니다.');
     config = await response.json();
     if (!config.username || !Array.isArray(config.categories)) throw new Error('사이트 설정의 username과 categories를 확인해 주세요.');
+    try {
+      const discovery = await fetch(new URL('../content/contributions.json', import.meta.url), { cache: 'no-cache' });
+      if (!discovery.ok) throw new Error('참여 목록 조회 실패');
+      config.externalRepositories = resolveExternalRepositories(config, await discovery.json());
+    } catch {
+      discoveryWarning = '자동 참여 목록을 불러오지 못해 수동 등록 목록을 표시합니다.';
+      config.externalRepositories = resolveExternalRepositories(config);
+    }
     document.title = `${config.username} — Repository archive`;
     $('#site-title').textContent = config.title;
     $('#site-description').textContent = config.description;

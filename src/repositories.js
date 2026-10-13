@@ -18,3 +18,17 @@ export function curateRepositories(repositories, config) {
     };
   });
 }
+
+export function resolveExternalRepositories(config, snapshot) {
+  if (snapshot && snapshot.username?.toLowerCase() !== config.username.toLowerCase()) {
+    throw new Error('참여 목록의 사용자가 사이트 설정과 다릅니다.');
+  }
+  if (snapshot && !Array.isArray(snapshot.repositories)) throw new Error('참여 목록 형식이 올바르지 않습니다.');
+  const names = new Map();
+  for (const name of [...(config.externalRepositories ?? []), ...(snapshot?.repositories ?? [])]) {
+    if (typeof name !== 'string' || !/^[\w.-]+\/[\w.-]+$/.test(name)) throw new Error('참여 레포는 owner/repo 형식이어야 합니다.');
+    const key = name.toLowerCase();
+    if (!names.has(key)) names.set(key, name);
+  }
+  return [...names.values()];
+}

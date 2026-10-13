@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { curateRepositories } from '../src/repositories.js';
+import { curateRepositories, resolveExternalRepositories } from '../src/repositories.js';
 
 test('editorial metadata overrides descriptions without hiding newly added repositories', () => {
   const repos = [
@@ -33,4 +33,17 @@ test('same-named external repositories use full owner/repo metadata', () => {
 test('unknown editorial categories fall back to uncategorized', () => {
   const result = curateRepositories([{ name: 'new' }], { categories: [], repositories: { new: { category: 'removed' } } });
   assert.equal(result[0].category, 'uncategorized');
+});
+
+test('automatically discovered projects are combined with manual pins without duplicate requests', () => {
+  const names = resolveExternalRepositories({ username: 'yuyeol3', externalRepositories: ['Team/Pinned', 'Team/Shared'] }, {
+    username: 'yuyeol3', repositories: ['team/shared', 'Team/Discovered'],
+  });
+  assert.deepEqual(names, ['Team/Pinned', 'Team/Shared', 'Team/Discovered']);
+});
+
+test('a discovery snapshot for another user is rejected', () => {
+  assert.throws(() => resolveExternalRepositories({ username: 'yuyeol3', externalRepositories: [] }, {
+    username: 'someone-else', repositories: ['team/project'],
+  }), /사용자/);
 });
