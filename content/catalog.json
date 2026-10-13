@@ -14,6 +14,11 @@
   ],
   "externalRepositories": ["ApptiveDev/Fin-BE", "ApptiveDev/Fin-API", "kakaotechcampus-4/ktc4-pusan-4"],
   "repositories": {
+    "ApptiveDev/backend-study-sns": { "category": "learning", "description": "Spring Boot SNS 백엔드 학습 프로젝트. 공용 시작점 대신 게시글·회원·좋아요·팔로우를 구현한 개인 학습 브랜치로 연결합니다.", "tags": ["Spring Boot", "JPA", "MySQL"], "role": "주차별 SNS 백엔드 구현·테스트", "branch": "최유렬" },
+    "PNU-2026-AI-Hackathon/StarterTemplate": { "category": "learning", "description": "PNU AI 해커톤의 저장소 구성·README 작성 가이드 템플릿. 실행 애플리케이션은 포함하지 않습니다.", "tags": ["Markdown", "템플릿"], "role": "관련 팀 코드의 미병합 PR 작성 기록" },
+    "PNU-2026-AI-Hackathon/pnuai-c-07-finfin2": { "category": "web", "description": "가입 조건과 우대금리를 반영해 금융상품을 비교·추천하는 Y-Fin 해커톤 팀 프로젝트. Fin 백엔드·데이터 수집기·프런트엔드를 함께 포함합니다.", "tags": ["Spring Boot", "React", "Spring Batch"], "role": "OAuth2·JWT 인증, 데이터 수집·LLM 정규화", "featured": true },
+    "kakaotechcampus-4/pusan-clone": { "category": "ai-tools", "description": "제공 기반 코드 위에 일정 관리·RAG·MCP·하위 에이전트 위임을 구현한 6주 개인 학습 프로젝트. 개인 제출 브랜치로 연결합니다.", "tags": ["LangChain", "Gradio", "MCP"], "role": "주차별 개인 구현, 도구 호출 trace 평가", "branch": "choiyuyeol/final" },
+    "pnucse-capstone2026/capstone-2026-team-30": { "category": "web", "description": "Kyverno Governance Platform: Kubernetes 정책 위반과 한시적 예외의 승인·적용·만료를 관리하는 3인 졸업과제 팀 플랫폼.", "tags": ["NestJS", "Kubernetes", "PostgreSQL"], "role": "백엔드 인증·인가, 예외 상태 조정·재시도", "featured": true },
     "helloWorld": { "category": "learning", "description": "Hello, World! 출력을 확인하는 최소 C++ 예제의 포크.", "tags": ["C++", "실습"] },
     "hop": { "category": "tools", "description": "HWP·HWPX 문서 편집과 PDF 내보내기를 제공하는 데스크톱 앱의 포크. 원본 프로젝트는 golbin/hop입니다.", "tags": ["Rust", "Tauri", "문서 편집"] },
     "hyundai-autoever-portfolio": { "category": "presentations", "description": "백엔드 직무 지원용 Markdown 포트폴리오. Fin·카카오테크캠퍼스·Yacht Online 경험을 정리합니다.", "tags": ["Markdown", "포트폴리오"] },

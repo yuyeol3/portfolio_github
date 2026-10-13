@@ -15,6 +15,7 @@ export function curateRepositories(repositories, config) {
       featured: metadata.featured === true,
       tags: metadata.tags ?? [],
       role: metadata.role ?? '',
+      branch: metadata.branch ?? '',
     };
   });
 }
@@ -31,4 +32,9 @@ export function resolveExternalRepositories(config, snapshot) {
     if (!names.has(key)) names.set(key, name);
   }
   return [...names.values()];
+}
+
+export function repositoryUrl(repo) {
+  const root = `https://github.com/${repo.full_name}`;
+  return repo.branch ? `${root}/tree/${repo.branch.split('/').map(encodeURIComponent).join('/')}` : root;
 }

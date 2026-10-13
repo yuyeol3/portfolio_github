@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { curateRepositories, resolveExternalRepositories } from '../src/repositories.js';
+import { curateRepositories, resolveExternalRepositories, repositoryUrl } from '../src/repositories.js';
 
 test('editorial metadata overrides descriptions without hiding newly added repositories', () => {
   const repos = [
@@ -46,4 +46,12 @@ test('a discovery snapshot for another user is rejected', () => {
   assert.throws(() => resolveExternalRepositories({ username: 'yuyeol3', externalRepositories: [] }, {
     username: 'someone-else', repositories: ['team/project'],
   }), /사용자/);
+});
+
+test('student project links open the curated implementation branch instead of the shared starter', () => {
+  const [repo] = curateRepositories([{ name: 'pusan-clone', full_name: 'team/pusan-clone', owner: { login: 'team' } }], {
+    username: 'yuyeol3', categories: [{ id: 'ai-tools' }],
+    repositories: { 'team/pusan-clone': { category: 'ai-tools', branch: 'choiyuyeol/final' } },
+  });
+  assert.equal(repositoryUrl(repo), 'https://github.com/team/pusan-clone/tree/choiyuyeol/final');
 });

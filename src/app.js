@@ -1,5 +1,5 @@
 import { fetchPublicRepositories, fetchExternalRepositories } from './github.js';
-import { curateRepositories, resolveExternalRepositories } from './repositories.js';
+import { curateRepositories, resolveExternalRepositories, repositoryUrl } from './repositories.js';
 
 const $ = selector => document.querySelector(selector);
 let config;
@@ -43,7 +43,7 @@ function repositoryCard(repo) {
   top.append(badges);
   const title = element('h3');
   const link = element('a', '', `${repo.name} ↗`);
-  link.href = `https://github.com/${repo.full_name}`;
+  link.href = repositoryUrl(repo);
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
   title.append(link);
