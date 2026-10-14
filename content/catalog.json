@@ -21,7 +21,7 @@
     "pnucse-capstone2026/capstone-2026-team-30": { "category": "web", "description": "Kyverno Governance Platform: Kubernetes 정책 위반과 한시적 예외의 승인·적용·만료를 관리하는 3인 졸업과제 팀 플랫폼.", "tags": ["NestJS", "Kubernetes", "PostgreSQL"], "role": "백엔드 인증·인가, 예외 상태 조정·재시도", "featured": true },
     "helloWorld": { "category": "learning", "description": "Hello, World! 출력을 확인하는 최소 C++ 예제의 포크.", "tags": ["C++", "실습"] },
     "hop": { "category": "tools", "description": "HWP·HWPX 문서 편집과 PDF 내보내기를 제공하는 데스크톱 앱의 포크. 원본 프로젝트는 golbin/hop입니다.", "tags": ["Rust", "Tauri", "문서 편집"] },
-    "hyundai-autoever-portfolio": { "category": "presentations", "description": "백엔드 직무 지원용 Markdown 포트폴리오. Fin·카카오테크캠퍼스·Yacht Online 경험을 정리합니다.", "tags": ["Markdown", "포트폴리오"] },
+    "backend-portfolio": { "category": "presentations", "description": "백엔드 직무 지원용 Markdown 포트폴리오. Fin·카카오테크캠퍼스·Yacht Online 경험을 정리합니다.", "tags": ["Markdown", "포트폴리오"] },
     "iwb-term-chat": { "category": "other", "description": "채팅 기능 구현을 위해 개설한 저장소. 조사 시점에는 소스 파일이 없습니다.", "tags": ["빈 저장소"] },
     "kakao-assignment-1": { "category": "other", "description": "제목만 있는 README를 담은 저장소. 과제 내용과 구현은 아직 등록되어 있지 않습니다.", "tags": ["README"] },
     "kakaotech-learning-log": { "category": "other", "description": "조사 시점에는 파일이나 README가 없는 저장소.", "tags": ["빈 저장소"] },
